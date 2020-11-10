@@ -11,7 +11,7 @@ var urlsToCache = [
 	'/js/materialize.min.js',
 	'/js/script.js',
 	'/js/api.js',
-	"/icon.png"
+	"/icon.png" 
 ];
 
 self.addEventListener('install', function(event){
