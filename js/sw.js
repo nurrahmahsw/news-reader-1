@@ -11,14 +11,4 @@ if ('serviceWorker' in navigator) {
     })
   } else {
     console.log("ServiceWorker belum didukung browser ini.")
-<<<<<<< HEAD
   }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    getArticles();
-    getArticleById();
-
-});
-=======
-  }
->>>>>>> b4a57cee8a4ebd6d225059c4aa1d349be1309021

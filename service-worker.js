@@ -1,4 +1,4 @@
-const CACHE_NAME = "firstpwa-v1";
+const CACHE_NAME = 'newsreader';
 var urlsToCache = [
   "/",
   "/nav.html",
@@ -10,8 +10,9 @@ var urlsToCache = [
   "/css/materialize.min.css",
   "/js/materialize.min.js",
   "/manifest.json",
-  "/js/nav.js",
+//   "/js/nav.js",
   "/js/api.js",
+  "/js/sw.js",
   "/icon.png"
 ];
 
@@ -24,7 +25,7 @@ self.addEventListener("install", function(event) {
 });
 
 self.addEventListener("fetch", function(event) {
-  var base_url = "https://readerapi.codepolitan.com/";
+  var base_url = "https://reader-api.dicoding.dev/";
 
   if (event.request.url.indexOf(base_url) > -1) {
     event.respondWith(

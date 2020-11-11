@@ -1,4 +1,4 @@
-var base_url = "https://readerapi.codepolitan.com/";
+var base_url = "https://reader-api.dicoding.dev/";
 // Blok kode yang akan di panggil jika fetch berhasil
 function status(response) {
   if (response.status !== 200) {
